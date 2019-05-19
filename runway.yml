@@ -1,0 +1,9 @@
+version: 0.1
+python: 3.6
+entrypoint: python seinfeldvision_runway.py
+cuda: 9.2
+framework: tensorflow
+build_steps:
+    - pip install -r requirements.txt
+    - wget http://116.203.128.238/checkpoint.tar.gz
+    - tar xf checkpoint.tar.gz
