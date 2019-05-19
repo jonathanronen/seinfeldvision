@@ -8,7 +8,7 @@ from runway.data_types import text
 # supported configs. The setup function should return the model ready to be
 # used.
 setup_options = {
-    'run_name': text(),
+    'run_name': text(default='first_345m_run'),
 }
 
 
