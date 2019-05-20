@@ -6,6 +6,3 @@ framework: tensorflow
 build_steps:
     - pip install runway-python
     - pip install -r requirements.txt
-    - wget http://116.203.128.238/checkpoint.tar.gz
-    - tar xf checkpoint.tar.gz
-    - rm checkpoint.tar.gz
