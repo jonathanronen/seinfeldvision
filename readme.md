@@ -6,14 +6,11 @@ This is a [GPT-2](https://github.com/openai/gpt-2) (345M) model that was trained
 
 I used the [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple) package to download and re-train the model. You can do the same by following the details in these google colab notebooks:
 
-1. [01_get-seinfeld-corpus](data_preparation_notebooks/01_get-seinfeld-corpus.ipynb)
-2. [02_Train-a-GPT-2-Text-Generating-Model-w-GPU.ipynb](data_preparation_notebooks/02_Train-a-GPT-2-Text-Generating-Model-w-GPU.ipynb) - this is straight up copied from [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple). Good work, [@minimaxir](https://github.com/minimaxir)!.
+1. [01_get-seinfeld-corpus](data-preparation-notebooks/01_get-seinfeld-corpus.ipynb)
+2. [02_Train-a-GPT-2-Text-Generating-Model-w-GPU.ipynb](data-preparation-notebooks/02_Train-a-GPT-2-Text-Generating-Model-w-GPU.ipynb) - this is straight up copied from [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple). Good work, [@minimaxir](https://github.com/minimaxir)!.
 
 ---
 
-## The trained model
-
-The GPT-2 345M model takes approximately 1.5GB on disk. Github won't let you upload such a large file, so I put it [here](http://116.203.128.238/checkpoint.tar.gz)\*. The runway app is configured to download it automatically for you, but installation might take a few minutes longer because of this external download.
 
 ## Inputs and outputs
 
