@@ -1,4 +1,5 @@
 import runway
+import shutil
 import gpt_2_simple as gpt2
 from runway.data_types import text
 
@@ -9,6 +10,7 @@ from runway.data_types import text
 # used.
 setup_options = {
     'run_name': text(default='first_345m_run'),
+    'checkpoint_file': runway.file(),
 }
 
 
@@ -20,6 +22,9 @@ def setup(opts):
     global run_name, sess
     run_name = opts['run_name']
     print(f'Run name: {run_name}')
+
+    shutil.copy(opts['checkpoint_file'], f'checkpoints/{run_name}/model-10000.data-00000-of-00001')
+
     sess = gpt2.start_tf_sess()
     gpt2.load_gpt2(sess, run_name=run_name)
     return None
@@ -38,7 +43,7 @@ def generate(model, args):
                         include_prefix=True, length=200, temperature=0.7,
                        run_name=run_name)
     return {
-        'script': samples[0][len(args['caption']):]
+        'script': samples[0][len(args['caption'])+2:]
     }
 
 if __name__ == '__main__':
