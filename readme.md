@@ -16,17 +16,12 @@ I used the [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple) package to 
 
 The model accepts a text input, which it sets as the context for the seinfeld dialogue to be generated in.
 
-## How to use in the Runway app
-
-TODO
 
 ## Examples
 
-TODO
+![Seinfeldvision in the runway app](example.png)
 
 
 ---
 
 No rights ever held 2019, @jonathanronen
-
-\* I don't promise this link will stay up for any length of time
