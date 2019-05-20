@@ -44,5 +44,5 @@ def generate(model, args):
 if __name__ == '__main__':
     # run the model server using the default network interface and ports,
     # displayed here for convenience
-    runway.run(host='127.0.0.1', port=8000,
+    runway.run(host='0.0.0.0', port=8000,
         model_options={ 'run_name': 'first_345m_run' })
